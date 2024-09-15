@@ -3,7 +3,7 @@
 from lib.log import *
 from high_stakes.events import *
 
-open_log("manual.csv")
+open_log("red-awp-left.csv")
 
 def autonomous_function():
     intake_1st_stage.set_velocity(525, RPM)

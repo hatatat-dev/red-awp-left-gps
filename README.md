@@ -1,2 +1,2 @@
-# high-stakes-manual
-21919A VEX manual control program
+# red-awp-left 
+21919A VEX high stakes red autonomous win point on left side
