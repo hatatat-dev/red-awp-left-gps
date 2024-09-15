@@ -9,20 +9,30 @@ def driver_function():
     pass
 
 def autonomous_function():
-    intake_1st_stage.set_velocity(525, RPM)
-    intake_2nd_stage.set_velocity(525, RPM)
+    intake_1st_stage.set_velocity(500, RPM)
+    intake_2nd_stage.set_velocity(500, RPM)
     pid_driver.drive(-1000, True)
     clamp.set(True)
-    pid_turner.turn(85, FRAME_HEADING_RELATIVE)
+    pid_turner.turn(80, FRAME_HEADING_RELATIVE)
+    
+    wait(1000, MSEC)
+    reset_odometry()
+    
     intake_1st_stage.spin(REVERSE)
     intake_2nd_stage.spin(FORWARD)
-    pid_driver.drive(700, True)
+    pid_driver.drive(600, True)
     pid_turner.turn(90, FRAME_HEADING_RELATIVE)
-    pid_driver.drive(400, True)
-    wait(100, MSEC)
+    pid_driver.drive(270, True)
+    
+    wait(1000, MSEC)
+    reset_odometry()
+    
     pid_driver.drive(-150, True)
     pid_turner.turn(15, FRAME_HEADING_RELATIVE)
-    pid_driver.drive(150, True)
+    pid_driver.drive(160, True)
+
+    wait(1000, MSEC)
+    reset_odometry()
 
 
 init_event_handling()
