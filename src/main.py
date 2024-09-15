@@ -31,21 +31,23 @@ def autonomous_function():
     pid_turner.turn(20, FRAME_HEADING_RELATIVE)
     pid_driver.drive(170)
 
-    wait(1000, MSEC)
     reset_odometry()
 
-    pid_driver.drive(-150)
-    pid_turner.turn(120, FRAME_HEADING_RELATIVE)
-    intake_retract.set(True)
-    pid_driver.drive(1200)
-    intake_retract.set(False)
+    pid_turner.turn(100, FRAME_HEADING_RELATIVE)
+    pid_driver.drive(500, False)
 
-    wait(1000, MSEC)
-    reset_odometry()
+    # pid_driver.drive(-150)
+    # pid_turner.turn(120, FRAME_HEADING_RELATIVE)
+    # intake_retract.set(True)
+    # pid_driver.drive(1200)
+    # intake_retract.set(False)
 
-    pid_driver.drive(-700)
-    pid_turner.turn(75, FRAME_HEADING_RELATIVE)
-    pid_driver.drive(-400)
+    # wait(1000, MSEC)
+    # reset_odometry()
+
+    # pid_driver.drive(-700)
+    # pid_turner.turn(75, FRAME_HEADING_RELATIVE)
+    # pid_driver.drive(-400)
 
 
 
