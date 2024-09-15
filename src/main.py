@@ -5,6 +5,9 @@ from high_stakes.events import *
 
 open_log("red-awp-left.csv")
 
+def driver_function():
+    pass
+
 def autonomous_function():
     intake_1st_stage.set_velocity(525, RPM)
     intake_2nd_stage.set_velocity(525, RPM)
@@ -23,3 +26,6 @@ def autonomous_function():
 
 
 init_event_handling()
+
+# register the competition functions
+competition = Competition(driver_function, autonomous_function)
