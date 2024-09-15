@@ -34,6 +34,11 @@ def autonomous_function():
     wait(1000, MSEC)
     reset_odometry()
 
+    pid_driver.drive(-150, True)
+    pid_turner.turn(130, FRAME_HEADING_RELATIVE)
+    intake_retract.set(True)
+    pid_driver.drive(1250, True)
+
 
 init_event_handling()
 
