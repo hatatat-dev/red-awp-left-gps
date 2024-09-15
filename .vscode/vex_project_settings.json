@@ -4,12 +4,12 @@
 		"json": 2
 	},
 	"project": {
-		"name": "red-awp-left",
-		"description": "21919A VEX high stakes red autonomous win point on left side",
+		"name": "red-awp-left-gps",
+		"description": "21919A VEX high stakes red autonomous win point on left side with GPS",
 		"creationDate": "9/12/2024, 8:59:06 PM",
 		"platform": "V5",
 		"language": "python",
-		"slot": 6,
+		"slot": 7,
 		"sdkVersion": "V5_1_0_1_19",
 		"python": {
 			"main": "build/preprocessed.py"
